@@ -38,9 +38,9 @@
     <!-- Chatwoot Widget -->
     <!-- CAMBIA EL TOKEN AQUÍ PARA PROBAR OTROS BOTS -->
     <script>
-        // NOTA: Script de Localhost (0.0.0.0). No funcionará en Vercel (HTTPS).
+        window.chatwootSettings = { "position": "right", "type": "standard", "launcherTitle": "Chatea con nosotros" };
         (function (d, t) {
-            var BASE_URL = "http://0.0.0.0:3000";
+            var BASE_URL = "https://chat.holinsys.net";
             var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
             g.src = BASE_URL + "/packs/js/sdk.js";
             g.async = true;
