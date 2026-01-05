@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChocoBot | Tu Experto en Cacao - ChocoPro</title>
+    <title>ChampiP | AI Testing Lab</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -13,30 +13,34 @@
     <div class="background-overlay"></div>
 
     <header>
-        <div class="logo">ChocoPro <span>AI</span></div>
+        <div class="logo">ChampiP <span>Labs</span></div>
     </header>
 
     <main class="hero">
         <div class="content">
-            <h1>Descubre la Ciencia del <span class="highlight">Chocolate</span></h1>
-            <p>Soy <strong>ChocoBot</strong> 🍫, tu asistente inteligente especializado en cacao peruano, procesos de
-                fermentación y química del chocolate.</p>
-            <p class="subtext">Pregúntame sobre fat bloom, genética del cacao, o cómo mejorar tu producción.</p>
+            <h1>Entorno de Pruebas <br><span class="highlight">IA & Chatbots</span></h1>
+            <p>Bienvenido al laboratorio de <strong>ChampiP</strong>. Esta página está diseñada como un lienzo en blanco
+                para validar flujos de n8n, integraciones de Chatwoot y nuevos agentes inteligentes.</p>
+            <p class="subtext">Actualmente probando: <strong>Integración Agente RAG</strong></p>
 
             <div class="cta-container">
-                <p class="cta-hint">👇 ¡Habla conmigo en la esquina inferior derecha!</p>
+                <p class="cta-hint">👇 El widget de prueba está activo abajo a la derecha</p>
             </div>
-        </div>
-        <div class="visual">
-            <div class="cocoa-pod"></div>
+
+            <div class="instructions">
+                <h3>🛠️ ¿Cómo probar otro bot?</h3>
+                <p>Edita el archivo <code>index.html</code> y reemplaza el <code>websiteToken</code> en el script de
+                    abajo.</p>
+            </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 ChocoPro. Potenciado por n8n & Qdrant.</p>
+        <p>&copy; 2026 ChampiP Labs. Desarrollo & Automatización.</p>
     </footer>
 
     <!-- Chatwoot Widget -->
+    <!-- CAMBIA EL TOKEN AQUÍ PARA PROBAR OTROS BOTS -->
     <script>
         (function (d, t) {
             var BASE_URL = "https://chat.chocopro.com";
@@ -46,7 +50,7 @@
             s.parentNode.insertBefore(g, s);
             g.onload = function () {
                 window.chatwootSDK.run({
-                    websiteToken: 'gEkk3KxJnfbi4K4kVPqCnjbG',
+                    websiteToken: 'gEkk3KxJnfbi4K4kVPqCnjbG', // <--- Token del Bot a probar
                     baseUrl: BASE_URL
                 })
             }
