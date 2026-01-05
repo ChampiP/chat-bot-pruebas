@@ -38,16 +38,16 @@
     <!-- Chatwoot Widget -->
     <!-- CAMBIA EL TOKEN AQUÍ PARA PROBAR OTROS BOTS -->
     <script>
-        window.chatwootSettings = { "position": "right", "type": "standard", "launcherTitle": "Chatea con nosotros" };
+        // NOTA: Script de Localhost (0.0.0.0). No funcionará en Vercel (HTTPS).
         (function (d, t) {
-            var BASE_URL = "https://chat.chocopro.com";
+            var BASE_URL = "http://0.0.0.0:3000";
             var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
             g.src = BASE_URL + "/packs/js/sdk.js";
             g.async = true;
             s.parentNode.insertBefore(g, s);
             g.onload = function () {
                 window.chatwootSDK.run({
-                    websiteToken: 'gEkk3KxJnfbi4K4kVPqCnjbG',
+                    websiteToken: 'kxj6Gh81h8W7s7QNkMKwfdw4',
                     baseUrl: BASE_URL
                 })
             }
