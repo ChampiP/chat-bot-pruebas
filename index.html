@@ -38,6 +38,7 @@
     <!-- Chatwoot Widget -->
     <!-- CAMBIA EL TOKEN AQUÍ PARA PROBAR OTROS BOTS -->
     <script>
+        window.chatwootSettings = { "position": "right", "type": "standard", "launcherTitle": "Chatea con nosotros" };
         (function (d, t) {
             var BASE_URL = "https://chat.chocopro.com";
             var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
@@ -46,7 +47,7 @@
             s.parentNode.insertBefore(g, s);
             g.onload = function () {
                 window.chatwootSDK.run({
-                    websiteToken: 'gEkk3KxJnfbi4K4kVPqCnjbG', // <--- Token del Bot a probar
+                    websiteToken: 'gEkk3KxJnfbi4K4kVPqCnjbG',
                     baseUrl: BASE_URL
                 })
             }
