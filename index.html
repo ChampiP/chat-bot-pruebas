@@ -39,24 +39,17 @@
     <!-- CAMBIA EL TOKEN AQUÍ PARA PROBAR OTROS BOTS -->
     <script>
         (function (d, t) {
-            var BASE_URL = "https://chat.holinsys.net";
+            var BASE_URL = "https://chat.chocopro.com";
             var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
             g.src = BASE_URL + "/packs/js/sdk.js";
             g.defer = true;
             g.async = true;
             s.parentNode.insertBefore(g, s);
             g.onload = function () {
-                console.log("✅ Chatwoot SDK cargado correctamente");
                 window.chatwootSDK.run({
-                    websiteToken: 'wxVRYJe3CrcMqcBmhukRzvEL',
-                    baseUrl: BASE_URL,
-                    position: 'right',
-                    type: 'standard',
-                    launcherTitle: 'Chat con nosotros'
+                    websiteToken: 'TcWzVVQz2X5QAYJcBPVkyJeC',
+                    baseUrl: BASE_URL
                 });
-            };
-            g.onerror = function () {
-                console.error("❌ Error: No se pudo cargar el SDK de Chatwoot desde " + BASE_URL);
             };
         })(document, "script");
     </script>
