@@ -36,6 +36,19 @@
     </footer>
 
     <!-- Chatwoot Widget -->
-    <!-- CAMBIA EL TOKEN AQUÍ PARA PROBAR OTROS BOTS -->
-<script>(function(a,m,o,c,r,m){a[m]={id:"1064865",hash:"448122f7dd5861096b881c4bad3598ff236fdde13a81ada63d8e6dc500b70915",locale:"es",setMeta:function(p){this.params=(this.params||[]).concat([p])}};a[o]=a[o]||function(){(a[o].q=a[o].q||[]).push(arguments)};var d=a.document,s=d.createElement('script');s.async=true;s.id=m+'_script';s.src='https://gso.kommo.com/js/button.js';d.head&&d.head.appendChild(s)}(window,0,'crmPlugin',0,0,'crm_plugin'));</script>
+    <script>
+        (function(d, t) {
+            var BASE_URL = "https://chatadn.holinsys.net";
+            var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            g.src = BASE_URL + "/packs/js/sdk.js";
+            g.async = true;
+            s.parentNode.insertBefore(g, s);
+            g.onload = function() {
+                window.chatwootSDK.run({
+                    websiteToken: 'TcWzVVQz2X5QAYJcBPVkyJeC',
+                    baseUrl: BASE_URL
+                });
+            };
+        })(document, "script");
+    </script>
 </body>
